@@ -17,7 +17,7 @@ hide:
 </div>
 
 <div class="metric-strip">
-  <div class="metric"><strong>6</strong><span>разделов с правилами</span></div>
+  <div class="metric"><strong>7</strong><span>разделов с правилами</span></div>
   <div class="metric"><strong>3</strong><span>готовых шаблона</span></div>
   <div class="metric"><strong>2</strong><span>проверенных документа</span></div>
 </div>
@@ -45,6 +45,14 @@ hide:
   Фиксируйте параметры, ограничения, ответы, ошибки и идемпотентность.
 
   [Правила API →](rules/api.md)
+
+- :material-accessibility:{ .lg .middle } **Учитывайте всех**
+
+  ---
+
+  Делайте смысл доступным без цвета, мыши и профессионального жаргона.
+
+  [Доступность →](rules/accessibility.md)
 
 - :material-check-decagram-outline:{ .lg .middle } **Проверяйте автоматически**
 

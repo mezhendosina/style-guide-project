@@ -53,6 +53,7 @@ nav:
       - Оформление: rules/formatting.md
       - Терминология: rules/terminology.md
       - Документация API: rules/api.md
+      - Доступность: rules/accessibility.md
   - Шаблоны:
       - Практическое руководство: patterns/how-to.md
       - Метод API: patterns/api-method.md
