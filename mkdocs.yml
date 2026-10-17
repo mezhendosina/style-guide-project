@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: API Writing Guide
+site_description: Руководство по стилю документации REST API
+site_url: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
+repo_name: style-guide-project
+repo_url: !ENV [REPO_URL, "https://github.com/USERNAME/style-guide-project"]
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Включить тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Включить светлую тему
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.share
+    - toc.follow
+
+nav:
+  - Главная: index.md
+  - Быстрый старт: quick-start.md
+  - Правила:
+      - Принципы: rules/principles.md
+      - Язык и тон: rules/language.md
+      - Структура документов: rules/structure.md
+      - Оформление: rules/formatting.md
+      - Терминология: rules/terminology.md
+      - Документация API: rules/api.md
+  - Шаблоны:
+      - Практическое руководство: patterns/how-to.md
+      - Метод API: patterns/api-method.md
+      - Самопроверка: patterns/checklist.md
+  - Примеры:
+      - Создание заказа: examples/create-order.md
+      - Обработка ошибок: examples/error-handling.md
+      - Результаты тестирования: examples/evaluation.md
+  - О проекте:
+      - Исследование: project/research.md
+      - Отчёт по лабораторной: project/lab-report.md
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: На этой странице
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: !ENV [REPO_URL, "https://github.com/USERNAME/style-guide-project"]
+      name: Репозиторий проекта
+  status:
+    new: Новое правило
+    deprecated: Устаревшее правило
+
+copyright: "API Writing Guide · Учебный Docs as Code-проект"
+
+strict: true
